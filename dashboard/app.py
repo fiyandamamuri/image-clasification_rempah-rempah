@@ -6,17 +6,17 @@ from tensorflow.keras.preprocessing import image
 import json
 
 # Load model yang sudah disimpan
-model = load_model("model-v2.h5", compile=False)
+model = load_model("./model-v2.h5", compile=False)
 
 # Load labels dari file JSON
-with open("labels.json", "r") as f:
+with open("./labels.json", "r") as f:
     class_indices = json.load(f)
 
 # Balik mapping {label: index} menjadi {index: label}
 labels = {v: k for k, v in class_indices.items()}
 
 # Dictionary informasi tambahan rempah
-with open("rempah_info.json", "r", encoding="utf-8") as f:
+with open("./rempah_info.json", "r", encoding="utf-8") as f:
     rempah_info = json.load(f)
 
 # Fungsi untuk memproses gambar sebelum prediksi

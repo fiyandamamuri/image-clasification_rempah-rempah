@@ -29,7 +29,7 @@ def preprocess_image(img):
 
 # Streamlit UI
 st.title("🔍 Klasifikasi Rempah-Rempah")
-st.image("cover-dashboard.jpg", use_container_width=True)
+st.image("./cover-dashboard.jpg", use_container_width=True)
 st.subheader("Upload gambar rempah-rempah, model akan memprediksi jenisnya!")
 st.caption("Note : klasifikasi hanya terbatas pada beberapa jenis rempah saja seperti, adas, andaliman, asam jawa, asam kandis, bawang bombai, bawang merah, bawang putih, bunga lawing, cabai, cengkeh, daun jeruk, daun kemangi, daun ketumbar, daun kunyit, daun pandan, daun salam, jahe, jinten, kapulaga, kayu manis, kayu secang, kemiri, kemukus, kencur, ketumbar, kluwek, kunyit, lada, lengkuas, pala, saffron, serai, temu kunci, vanili, wijen.")
 
